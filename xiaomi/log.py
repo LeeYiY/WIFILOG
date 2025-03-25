@@ -1,7 +1,5 @@
 import os
 import re
-from ipaddress import ip_address
-from pathlib import Path
 from urllib.parse import urlparse
 
 import requests

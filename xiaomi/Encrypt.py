@@ -1,6 +1,4 @@
 import hashlib
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad
 import time
 import random
 
@@ -26,4 +24,3 @@ class Encrypt:
         first_sha1 = hashlib.sha1((pwd + self.key).encode()).hexdigest()
         combined = self.nonce + first_sha1
         return hashlib.sha1(combined.encode()).hexdigest()
-
